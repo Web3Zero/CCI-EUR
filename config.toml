@@ -1,0 +1,48 @@
+[ib]
+host = '127.0.0.1'
+port = 4002
+
+[asset]
+symbol = 'EUR.USD'
+security_type = 'CASH'
+exchange = 'IDEALPRO'
+currency = 'USD'
+data_type = 'MIDPOINT'
+
+# symbol = 'EUR.USD'
+# security_type = 'CASH'
+# exchange = 'IDEALPRO'
+# currency = 'USD'
+# data_type = 'MIDPOINT'
+
+# symbol = 'ESZ2'
+# security_type = 'FUT'
+# exchange = 'GLOBEX'
+# currency = 'USD'
+# data_type = 'MIDPOINT'
+
+# symbol = 'CLX2' CLZ2 CLF3
+# security_type = 'FUT'
+# exchange = 'NYMEX'
+# currency = 'USD'
+# data_type = 'MIDPOINT'
+
+# symbol = 'ZB   DEC 22'
+# security_type = 'FUT'
+# exchange = 'ECBOT'
+# currency = 'USD'
+# data_type = 'TRADES'
+
+[strategy]
+timeframe = '3min'
+order_size = 1
+cci_length = 20
+cci_long_entry_threshold = 120
+cci_long_exit_threshold = 90
+cci_short_entry_threshold = -120
+cci_short_exit_threshold = -90
+
+[data]
+save_data_to_csv = 'data.csv' # Leave empty to disable saving to CSV
+save_data_to_csv_interval = 60  # In seconds
+order_send_interval = 1  # In seconds

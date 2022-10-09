@@ -1,0 +1,5 @@
+pandas
+pandas-ta
+ib_insync
+loguru
+toml

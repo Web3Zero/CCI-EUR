@@ -1,1 +1,2 @@
-# CCI-EUR
+# cci
+CCI based strategies
